@@ -24,13 +24,6 @@ function hidePreloader() {
 };
 setTimeout(hidePreloader, 6000);
 
-function showContent() {
-    const contentWrapper = document.querySelector('body > *:not(.preloader)');
-    contentWrapper.style.display = 'block';
-};
-setTimeout(showContent, 3500);
-
-
 // navbar
 const hamburger = document.getElementById('hamburger');
 const iHam = document.getElementById('iham');
