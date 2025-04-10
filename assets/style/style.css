@@ -236,10 +236,6 @@ nav {
     display: none;
 }
 
-body > *:not(.preloader) {
-    display: none;
-}
-
 body.darker > *:not(nav) {
     filter: brightness(0.5);
     transition: filter 0.5s;
