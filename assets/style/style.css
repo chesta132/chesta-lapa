@@ -180,10 +180,6 @@ nav {
     }
 }
 
-nav br {
-    display: none;
-}
-
 .navbar-logo {
     font-size: 1.3rem;
     font-weight: 700;
@@ -240,17 +236,13 @@ nav br {
     display: none;
 }
 
-body.darker > .content-wrapper:not(nav) {
+body.darker > *:not(nav) {
     filter: brightness(0.5);
     transition: filter 0.5s;
     pointer-events: none;
 }
 
 @media (max-width: 768px) {
-    nav br {
-        display: block;
-    }
-    
     #hamburger {
         display: block;
     }
