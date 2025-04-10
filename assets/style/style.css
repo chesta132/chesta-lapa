@@ -41,14 +41,14 @@
 }
 
 .btn-0-0:hover, .btn-special:hover {
-    transform: scale(1.05);
-    transform-origin: 0 0;
+    transform: scale(1.03);
+    transform-origin: top left;
 }
 
 @media (width >= 768px) {
     .btn-special:hover {
-        transform: scale(1.05);
-        transform-origin: 100 0;
+        transform: scale(1.03);
+        transform-origin: top right;
     }
 }
 
@@ -247,8 +247,6 @@ body.darker > *:not(nav) {
     
     #hamburger {
         display: block;
-        width: 30%;
-        height: 30%;
     }
 
     #hamburger:hover .line {
