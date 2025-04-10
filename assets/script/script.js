@@ -25,6 +25,18 @@ function hidePreloader() {
 
 setTimeout(hidePreloader, 6000);
 
+
+// smooth scroll
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+    wrapper: 'body',
+    content: '.content-wrapper',
+    smooth: 2,
+    smoothTouch: 0.1
+});
+
+
 // navbar
 const hamburger = document.getElementById('hamburger');
 const iHam = document.getElementById('iham');

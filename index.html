@@ -10,115 +10,117 @@
     <script defer src="./assets/script/script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#home" class="navbar-logo flex items-center">
-            <img src="./assets/img/Cyz.png" class="w-10 rounded-full md:w-13" alt="Chesta Ardiona Logo">
-            <p class="ml-3">Chesta Ardiona</p>
-        </a>
-        <div class="navbar-extra cursor-pointer">
-            <div id="hamburger">
-                <svg width="50" height="50" viewBox="0 0 100 100" id="iham">
-                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                    <path class="line line2" d="M 20,50 H 80" />
-                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-            </div>
-        </div>
-        <div class="navbar-nav">
-            <a href="#home">Home</a>
-            <a href="#info">Info</a>
-            <a href="#doc">Documentation</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    <div class="content relative flex flex-col gap-10 bg-(--dark-color)">
-        <div id="home" class="px-8 md:px-18 pt-38 md:pt-48 bg-(--dark-color) flex flex-col md:flex-row justify-between gap-20">
-            <div class="title flex flex-col gap-10 justify-center md:justify-start">
-                <div class="text-info cursor-default text-center flex flex-col gap-4 md:text-start">
-                    <div>
-                        <h1 class="font-bold text-[3rem] text-[#fff] md:text-[3.5rem]">Hey, I'm Chesta</h1>
-                        <h2 id="typing-text" class="text-[#fff] text-[20px] md:text-[1.5rem] font-semibold">I'm a <span></span></h2>
-                    </div>
-                    <p>Hi, my name is Chesta Ardiona and I start learn programming using Python.<br>This website is built from HTML5, CSS3, JS, and some frameworks.</p>
-                </div>
-                <div class="link-info flex justify-center md:justify-start gap-8">
-                    <a href="#contact" id="btn" class="btn-0-0 bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) font-semibold cursor-pointer text-center">Contact</a>
-                    <div class="flex items-center gap-4">
-                        <a href="https://www.instagram.com/chst_ardi/" target="_blank" id="sosmed" class="w-14.5 h-14.5 text-[#fff] items-center text-center text-2xl bg-(--semi-dark-color) rounded-full p-3"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="mailto:chestaardi4@gmail.com" target="_blank" id="sosmed" class="w-14.5 h-14.5 text-[#fff] items-center text-center text-2xl bg-(--semi-dark-color) rounded-full p-3"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
+    <div class="content-wrapper">
+        <nav class="navbar">
+            <a href="#home" class="navbar-logo flex items-center">
+                <img src="./assets/img/Cyz.png" class="w-10 rounded-full md:w-13" alt="Chesta Ardiona Logo">
+                <p class="ml-3">Chesta Ardiona</p>
+            </a>
+            <div class="navbar-extra cursor-pointer">
+                <div id="hamburger">
+                    <svg width="50" height="50" viewBox="0 0 100 100" id="iham">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
                 </div>
             </div>
-            <div class="profile flex items-center justify-center md:-translate-y-15">
-                <img src="./assets/img/Cyz.png" class="rounded-2xl aspect-square md:rounded-3xl h-100 sm:h-130 md:h-100 object-cover" alt="Chesta Ardiona Profile Picture">
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#info">Info</a>
+                <a href="#doc">Documentation</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
-        <div id="info" class="bg-(--dark-color) bg-linear-110 p-8 md:p-18 from-[#fb82009c] from-[-30%] via-(--semi-black-color) via-30% to-(--dark-color) to-100% flex flex-col justify-center gap-20">
-            <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">info</p>
-            <div id="scroll" class="anim relative h-[100px] overflow-hidden text-(--white-color) text-[80px] flex justify-center items-center">
-                <div id="scroll-items" class="items1 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-html5"></i></div>
-                <div id="scroll-items" class="items2 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-css3-alt"></i></div>
-                <div id="scroll-items" class="items3 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-js"></i></div>
-                <div id="scroll-items" class="items4 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex justify-center items-center"><img src="./assets/img/Tailwind CSS.svg" class="w-full object-cover flex items-center" alt="Tailwind CSS Logo"></div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-10 last:gap-5">
-                <p class="anim cursor-default md:w-[50%]">As a skilled web developer, I specialize in creating responsive,
-                    user-friendly websites with a focus on modern design and
-                    efficient code. I excel in front-end development, with a deep
-                    understanding of HTML, CSS, JavaScript, and various
-                    frameworks. My passion is turning ideas into functional and
-                    aesthetically pleasing digital experiences.
-                </p>
-                <a href="#doc" id="btn" class="btn-0-0 anim w-50 md:w-70 h-fit bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) font-semibold cursor-pointer text-center">See My Work</a>
-                <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" id="btn" class="btn-special anim w-80 h-fit bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) md:rounded-(--btn-radius-reverse) font-semibold cursor-pointer text-center md:translate-y-5">Learn More About Web Dev</a>
-            </div>
-        </div>
-        <div id="doc" class="bg-(--black-color) py-15 px-10 grid gap-10">
-            <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">Documentation</p>
-            <div class="cards">
-                <div id="card1" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
-                    <img src="./assets/img/card1.png" class="rounded-2xl">
-                    <div class="card-info flex gap-2.5">
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Responsive</p>
+        </nav>
+        <div class="content relative flex flex-col gap-10 bg-(--dark-color)">
+            <div id="home" class="px-8 md:px-18 pt-38 md:pt-48 bg-(--dark-color) flex flex-col md:flex-row justify-between gap-20">
+                <div class="title flex flex-col gap-10 justify-center md:justify-start">
+                    <div class="text-info cursor-default text-center flex flex-col gap-4 md:text-start">
+                        <div>
+                            <h1 class="font-bold text-[3rem] text-[#fff] md:text-[3.5rem]">Hey, I'm Chesta</h1>
+                            <h2 id="typing-text" class="text-[#fff] text-[20px] md:text-[1.5rem] font-semibold">I'm a <span></span></h2>
+                        </div>
+                        <p>Hi, my name is Chesta Ardiona and I start learn programming using Python.<br>This website is built from HTML5, CSS3, JS, and some frameworks.</p>
                     </div>
-                    <h1 class="mt-5 text-2xl font-[650]">Previous Landing Page</h1>
+                    <div class="link-info flex justify-center md:justify-start gap-8">
+                        <a href="#contact" id="btn" class="btn-0-0 bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) font-semibold cursor-pointer text-center">Contact</a>
+                        <div class="flex items-center gap-4">
+                            <a href="https://www.instagram.com/chst_ardi/" target="_blank" id="sosmed" class="w-14.5 h-14.5 text-[#fff] items-center text-center text-2xl bg-(--semi-dark-color) rounded-full p-3"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="mailto:chestaardi4@gmail.com" target="_blank" id="sosmed" class="w-14.5 h-14.5 text-[#fff] items-center text-center text-2xl bg-(--semi-dark-color) rounded-full p-3"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div id="card2" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
-                    <img src="./assets/img/card2.png" class="rounded-2xl">
-                    <div class="card-info flex gap-2.5">
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
-                    </div>
-                    <h1 class="mt-5 text-2xl font-[650]">Clone Poco X5 5G Website<br><span class="text-[16px] font-medium text-(--grey-color)">(Only for educational)</span></h1>
-                </div>
-                <div id="card3" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
-                    <img src="./assets/img/card3.png" class="rounded-2xl">
-                    <div class="card-info flex gap-2.5">
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
-                        <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Responsive</p>
-                    </div>
-                    <h1 class="mt-5 text-2xl font-[650]">Classroom Gallery</h1>
+                <div class="profile flex items-center justify-center md:-translate-y-15">
+                    <img src="./assets/img/Cyz.png" class="rounded-2xl aspect-square md:rounded-3xl h-100 sm:h-130 md:h-100 object-cover" alt="Chesta Ardiona Profile Picture">
                 </div>
             </div>
-        </div>
-        <div id="contact" class="bg-(--dark-color) md:px-20 px-3 flex flex-col gap-20">
-            <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">Contact</p>
-            <div class="flex flex-col bg-(--semi-dark-color) rounded-t-[3rem] gap-10">
-                <form action="https://api.web3forms.com/submit" method="POST" class="inputs grid gap-4 pt-15 pb-5 px-8 md:px-20 md:pt-30">
-                    <input type="hidden" name="access_key" value="3ce68d76-d716-4681-b562-d3aa4d27f434">
-                    <input name="name" id="name" required class="border bg-[#2d2d2d] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" type="text" placeholder="Name">
-                    <input name="email" id="email" required class="border bg-[#2d2d2d] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" type="email" placeholder="Email">
-                    <textarea name="message" id="message" required class="border bg-[#232323] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" placeholder="Message"></textarea>
-                    <button id="btn" type="submit" name="send" class="bg-linear-120 w-fit from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-15 py-3 mt-10 mx-auto rounded-[10px] font-semibold cursor-pointer text-center">Send</button>
-                </form>
+            <div id="info" class="bg-(--dark-color) bg-linear-110 p-8 md:p-18 from-[#fb82009c] from-[-30%] via-(--semi-black-color) via-30% to-(--dark-color) to-100% flex flex-col justify-center gap-20">
+                <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">info</p>
+                <div id="scroll" class="anim relative h-[100px] overflow-hidden text-(--white-color) text-[80px] flex justify-center items-center">
+                    <div id="scroll-items" class="items1 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-html5"></i></div>
+                    <div id="scroll-items" class="items2 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div id="scroll-items" class="items3 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex text-center items-center"><i class="fa-brands fa-js"></i></div>
+                    <div id="scroll-items" class="items4 w-[90px] h-[90px] absolute left-[max(calc(90px*6),100%)] flex justify-center items-center"><img src="./assets/img/Tailwind CSS.svg" class="w-full object-cover flex items-center" alt="Tailwind CSS Logo"></div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-10 last:gap-5">
+                    <p class="anim cursor-default md:w-[50%]">As a skilled web developer, I specialize in creating responsive,
+                        user-friendly websites with a focus on modern design and
+                        efficient code. I excel in front-end development, with a deep
+                        understanding of HTML, CSS, JavaScript, and various
+                        frameworks. My passion is turning ideas into functional and
+                        aesthetically pleasing digital experiences.
+                    </p>
+                    <a href="#doc" id="btn" class="btn-0-0 anim w-50 md:w-70 h-fit bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) font-semibold cursor-pointer text-center">See My Work</a>
+                    <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" id="btn" class="btn-special anim w-80 h-fit bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-12 py-4 rounded-(--btn-radius) md:rounded-(--btn-radius-reverse) font-semibold cursor-pointer text-center md:translate-y-5">Learn More About Web Dev</a>
+                </div>
+            </div>
+            <div id="doc" class="bg-(--black-color) py-15 px-10 grid gap-10">
+                <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">Documentation</p>
+                <div class="cards">
+                    <div id="card1" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
+                        <img src="./assets/img/card1.png" class="rounded-2xl">
+                        <div class="card-info flex gap-2.5">
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Responsive</p>
+                        </div>
+                        <h1 class="mt-5 text-2xl font-[650]">Previous Landing Page</h1>
+                    </div>
+                    <div id="card2" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
+                        <img src="./assets/img/card2.png" class="rounded-2xl">
+                        <div class="card-info flex gap-2.5">
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
+                        </div>
+                        <h1 class="mt-5 text-2xl font-[650]">Clone Poco X5 5G Website<br><span class="text-[16px] font-medium text-(--grey-color)">(Only for educational)</span></h1>
+                    </div>
+                    <div id="card3" class="anim p-6 flex flex-col rounded-2xl max-w-135 text-(--white-color) font-[500] gap-3 cursor-default bg-linear-100 from-(--dark-color) from-0% via-[#424242] via-70% to-[#636363] to-100% border border-solid border-(--semi-dark-color)">
+                        <img src="./assets/img/card3.png" class="rounded-2xl">
+                        <div class="card-info flex gap-2.5">
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Web</p>
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Coding</p>
+                            <p class="bg-(--semi-dark-color) px-5 py-1 rounded-[20px] border border-solid border-(--grey-color) text-[13px]">Responsive</p>
+                        </div>
+                        <h1 class="mt-5 text-2xl font-[650]">Classroom Gallery</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="bg-(--dark-color) md:px-20 px-3 flex flex-col gap-20">
+                <p id="class-header" class="w-max inline-block my-0 mx-auto text-center cursor-default font-[600] text-[18px] leading-[22px] uppercase px-10 py-2 rounded-[20px] border border-solid border-(--grey-color)">Contact</p>
+                <div class="flex flex-col bg-(--semi-dark-color) rounded-t-[3rem] gap-10">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="inputs grid gap-4 pt-15 pb-5 px-8 md:px-20 md:pt-30">
+                        <input type="hidden" name="access_key" value="3ce68d76-d716-4681-b562-d3aa4d27f434">
+                        <input name="name" id="name" required class="border bg-[#2d2d2d] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" type="text" placeholder="Name">
+                        <input name="email" id="email" required class="border bg-[#2d2d2d] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" type="email" placeholder="Email">
+                        <textarea name="message" id="message" required class="border bg-[#232323] border-[#979797] focus:outline-0 rounded-[8px] py-3 px-2 text-(--white-color)" placeholder="Message"></textarea>
+                        <button id="btn" type="submit" name="send" class="bg-linear-120 w-fit from-(--high-orange) via-(--mid-orange) to-(--low-orange) text-[#fff] px-15 py-3 mt-10 mx-auto rounded-[10px] font-semibold cursor-pointer text-center">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="preloader absolute top-0 w-full h-full z-20 bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) flex justify-center items-center">
-        <img src="./assets/img/Cyz Transparent.png" class="w-100 h-100 flex justify-center items-center">
+        <div class="preloader absolute top-0 w-full h-full z-20 bg-linear-120 from-(--high-orange) via-(--mid-orange) to-(--low-orange) flex justify-center items-center">
+            <img src="./assets/img/Cyz Transparent.png" class="w-100 h-100 flex justify-center items-center">
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
