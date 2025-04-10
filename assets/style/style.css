@@ -165,7 +165,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 3%;
+    padding: 7px 12px;
     background-color: var(--black-color);
     position: fixed;
     top: 0;
@@ -324,10 +324,6 @@ body.darker > *:not(nav) {
 
     .navbar-nav.active {
         right: 0;
-    }
-    .navbar-logo {
-        display: flex;
-        flex-direction: column;
     }
 }
 
