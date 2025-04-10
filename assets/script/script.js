@@ -31,25 +31,27 @@ const iHam = document.getElementById('iham');
 const navbarNav = document.querySelector('.navbar-nav');
 const navBar = document.querySelector('.navbar');
 
+function updateHam() {
+    if (navbarNav.classList.contains('active')) {
+        iHam.classList.add('opened');
+        document.body.classList.add('darker');
+    } else {
+        iHam.classList.remove('opened');
+        document.body.classList.remove('darker');
+    };
+};
+
 // onclick hamburger
 hamburger.addEventListener('click', function() {
     navbarNav.classList.toggle('active');
-    
-    if (navbarNav.classList.contains('active')) {
-        iHam.className = ('fa-solid fa-xmark text-[30px]');
-        document.body.classList.add('darker');
-    } else {
-        iHam.className = ('fa-solid fa-bars text-[25px]');
-        document.body.classList.remove('darker');
-    }
+    updateHam();
 });
 // onclick !navbar
 
 document.addEventListener('click', function(e) {
     if(!navBar.contains(e.target)) {
         navbarNav.classList.remove('active');
-        document.body.classList.remove('darker');
-        iHam.className = ('fa-solid fa-bars text-[25px]');
+        updateHam();
     }
 })
 
