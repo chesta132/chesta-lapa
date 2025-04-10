@@ -240,7 +240,7 @@ nav br {
     display: none;
 }
 
-body.darker > *:not(nav) {
+body.darker > .content-wrapper:not(nav) {
     filter: brightness(0.5);
     transition: filter 0.5s;
     pointer-events: none;
