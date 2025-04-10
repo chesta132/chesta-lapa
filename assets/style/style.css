@@ -247,9 +247,11 @@ body.darker > *:not(nav) {
     
     #hamburger {
         display: block;
+        width: 30%;
+        height: 30%;
     }
 
-    .line:hover {
+    #hamburger:hover .line {
         stroke: var(--low-orange);
     }
 
