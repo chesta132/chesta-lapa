@@ -10,9 +10,11 @@ gsap.fromTo('.preloader',
 
 gsap.fromTo('body',
     {
-        overflow: 'hidden'
+        overflow: 'hidden',
+        display: 'none'
     },
     {
+        display: 'block',
         overflow: 'visible',
         delay: 4.5
     }
